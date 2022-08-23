@@ -49,8 +49,8 @@ def get_fruit_load_list():
 
 #streamlit.dataframe(my_data_rows)
 #allow end user to add fruit to the list
-add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
-streamlit.write('Thanks for adding ', add_my_fruit)
+#add_my_fruit = streamlit.text_input('What fruit would you like to add?','jackfruit')
+#streamlit.write('Thanks for adding ', add_my_fruit)
 
 my_cur.execute("insert into fruit_load_list values('from streamlit')")
 if streamlit.button('Get Fruit Load List'):
